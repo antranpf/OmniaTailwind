@@ -1,0 +1,1 @@
+{"Id":"a2f03454-a332-4ab2-8b8b-f6d7b0aab95d","Type":"Extension","Projects":[{"Path":"TailWindOmnia.Web/TailWindOmnia.Web.csproj","BaseImage":"preciofishbone/omnia:6.0-webapp"}]}

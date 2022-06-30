@@ -1,0 +1,23 @@
+{
+  "name": "TailWindOmnia.Web",
+  "version": "0.1.0",
+  "scripts": {
+    "omnia-watch": "tsc -v && tsc -w",
+    "omnia-before-build": "gulp omnia-before-build",
+    "omnia-after-build": "tsc -v && tsc && gulp omnia-after-build",
+    "omnia-after-build-release": "npm run omnia-after-build -- --docs"
+  },
+  "dependencies": {
+    "@omnia/fx-models": "6.7.2",
+    "@omnia/fx-sp": "6.7.2",
+    "@omnia/fx-spfx": "6.7.2",
+    "@omnia/tooling-vue": "6.7.2"
+  },
+  "devDependencies": {
+    "gulp": "4.0.2",
+    "tailwindcss": "^3.1.4"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  }
+}
