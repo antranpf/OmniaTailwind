@@ -16,6 +16,7 @@
     <None Remove="**\*.jsx" />
     <None Remove="**\*.map" />
     <None Remove="publish\**" />
+    <None Remove="client\ux\ux.manifest.ts" />
     <None Include="gulpfile.esm.js" />
   </ItemGroup>
 
@@ -26,6 +27,10 @@
 
   <ItemGroup>
     <PackageReference Include="Omnia.Fx.NetCore.WebApp" Version="6.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="client\ux\ux.manifest.ts" />
   </ItemGroup>
 
   <!--***************************************************************************************-->

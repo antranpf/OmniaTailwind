@@ -10,7 +10,7 @@ export default class HelloOmniaFxComponent extends VueComponentBase implements I
     @Prop({ default: false }) required: boolean;
     @Prop({ default: { title: 'Hello from HelloOmniaFxComponent!' } }) data?: HelloOmniaFxComponentData
     @Prop() styles?: typeof HelloOmniaFxComponentStyles;
-
+    tailwind
     private HelloOmniaFxComponentClasses = StyleFlow.use(HelloOmniaFxComponentStyles);
 
     created() {
@@ -27,7 +27,7 @@ export default class HelloOmniaFxComponent extends VueComponentBase implements I
     render(h) {
         return (
             <div class={this.HelloOmniaFxComponentClasses.container}>
-                <div>{this.data.title}</div>
+                <div class="text-3xl font-bold underline">{this.data.title}</div>
                 {this.required ? <div>Im required</div> : null}
             </div>
         )

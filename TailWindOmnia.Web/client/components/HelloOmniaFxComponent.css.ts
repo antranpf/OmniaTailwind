@@ -1,9 +1,6 @@
 import { types } from 'typestyle';
 import { StyleFlow } from '@omnia/fx/ux';
 
-/**
- * Styles for the HelloOmniaFxComponent component
- */
 export const HelloOmniaFxComponentStyles = {} as {
     container: types.NestedCSSProperties
 };
